@@ -8,7 +8,8 @@ body {
 }
 
 .headerTop {
-    /* background-color: #232f3e; */
+    /* background-color: black; */
+    background-image: linear-gradient( 90deg, #e62e35, #f8af41, #fac014);
     border-bottom: 1px solid #495159;
 }
 
@@ -16,7 +17,7 @@ body {
 /*#495159 border*/
 
 .navbar {
-    background-color: #1b2530;
+    background-color: gray;
 }
 
 .navbarImg {
@@ -267,7 +268,8 @@ h2 {
 #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #687e71;
+    /* background: #687e71; */
+    background-image: linear-gradient( 90deg, #e62e35, #f8af41, #fac014);
     padding: 0px;
     width: 90%;
     max-width: 450px;
@@ -302,7 +304,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 .myBtn {
-    background-color: #ffd200;
+    background-color: orange;
     border: none;
     color: white;
     padding: 15px 80px;
