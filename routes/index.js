@@ -9,33 +9,27 @@ const authentication = require("../app/middlewares/userAuthentication");
 
 //console.log(auth.userAuth);
 router.get("/", (req, res) => {
-    res.render("index");
+  res.render("index");
 });
 // router.get("/shop", shopController().shop);
 
 router.get("/admin", authentication.checkAuthenticated, (req, res) => {
-    res.render("admin");
+  res.render("admin");
 });
 
 router.get("/login", authentication.checkNotAuthenticated, (req, res) => {
-    res.render("login");
+  res.render("login");
 });
 router.post("/logout", (req, res) => {
-    req.logout();
-    res.redirect("/login");
+  req.logout();
+  res.redirect("/login");
 });
 router.get("/register", authentication.checkNotAuthenticated, (req, res) => {
-    res.render("register");
+  res.render("register");
 });
 
-//Customer Routes
-// router.post("/orders", orderController().order);
-// router.get("/order", orderController().index);
-
-// // router.get("*", (req, res) => {
-// //   res.render("404", {
-// //     errorcomment: "Opps, Page Not Found",
-// //   });
-// // });
+router.get("/match", (req, res) => {
+  res.render("match");
+});
 
 module.exports = router;
